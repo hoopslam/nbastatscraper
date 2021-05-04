@@ -12,9 +12,6 @@ const scraper = async () => {
 		return tds.map((td) => td.innerText);
 	});
 
-	//You will now have an array of strings
-	//[ 'One', 'Two', 'Three', 'Four' ]
-	//One
 	console.log(data[data.length-1]);
 	await browser.close();
 }
